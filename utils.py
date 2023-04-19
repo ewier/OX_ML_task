@@ -7,7 +7,7 @@ def translate_y(y):
     return y
 
 def get_data_from_file():
-    covtype_df = read_csv(r'OX_ML_task\\covtype.data', header=None)
+    covtype_df = read_csv(r'covtype.data', header=None)
     y = covtype_df[:][54]
     X = covtype_df.drop(columns=[54])
     y = translate_y(y)
@@ -22,7 +22,7 @@ def trim(X_train, X_test, y_train, y_test, train_size=5000, test_size=1000):
     As mentioned in the readme file, due to the limitations of my computer, 
     I am only using 5000 rows for the train data and 1000 rows for the test data. 
     This can be modified via setting train_size, test_size arguments as None, None
-    in the main.py file
+    in the main.py file.
     '''
     return X_train[:train_size], X_test[:test_size], y_train[:train_size], y_test[:test_size]
 
