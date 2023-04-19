@@ -3,10 +3,9 @@
 The solution follows the stages outlined in the task description. 
 
 Structure:
-The repository contains the following data files:
- - covtype.data
- - covtype.info
- The solution itself is included in the following files:
+The repository contains a file describing the data used:
+  - covtype.info
+The solution itself is included in the following files:
   - main.py : script to run the overall solution
   - knn.py : contains an implementation of the k-nearest neighbours algorithm (zad 2)
   - baselines.py : contains two ML models used as a baseline (zad 3)
@@ -14,7 +13,7 @@ The repository contains the following data files:
   - utils.py : contains functions used to prepare data (zad 1)
 
 Running the solution:
-The file main.py contains function main that runs the solution. Running the file will cause the results to be shown on the terminal.
+The file main.py contains function main that runs the solution. Before running the file, please add the datafile covtype.data to the catalogue (it was too large to be uploaded to the repository). Having done that, running the file will cause the results to be shown on the terminal.
 
 Important note:
 Unfortunately, due to limited time, I've been unable to complete all of the tasks. My solution covers tasks 1, 2, 3, and part of task 4.
