@@ -11,12 +11,15 @@ The solution itself is included in the following files:
   - baselines.py : contains two ML models used as a baseline (zad 3)
   - neural_network.py : contains a neural network (tensorfow library) (zad 4)
   - utils.py : contains functions used to prepare data (zad 1)
+  - results.pdf : contains screenshots of the terminal after running the solution
 
 Running the solution:
 The file main.py contains function main that runs the solution. Before running the file, please add the datafile covtype.data to the catalogue (it was too large to be uploaded to the repository). Having done that, running the file will cause the results to be shown on the terminal.
 
-Important note:
-Unfortunately, due to limited time, I've been unable to complete all of the tasks. My solution covers tasks 1, 2, 3, and part of task 4.
+Important notes:
+1. Unfortunately, due to limited time, I've been unable to complete all of the tasks. My solution covers tasks 1, 2, 3, and part of task 4.
+2. In case of Logistic Regression, the algorithm doesn't converge. This can be corrected by increasing the maximum number of iterations or changing the solver function
+3. Due to the limitations of my computer, I am only using 5000 rows for the train data and 1000 rows for the test data. This can be modified via setting train_size, test_size arguments as None, None in the main.py file
 
 
 Sources:
